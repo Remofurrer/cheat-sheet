@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+table {
+    font-family: 'Yusei Magic', sans-serif;
+    width: 960px;
+    height: 0 auto;
+    border: 0.15em solid rgb(215, 236, 219);
+    border-spacing: 1em;
+    margin-bottom: 5em;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tags {
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 24px;
+    color: rgb(252, 231, 162);
+    margin-top: 3em;
+}
+
+thead {
+    font-weight: 600;
+    font-size: 20px;
+    background-color: rgb(244, 219, 222);
+}
+
+thead tr th {
+    padding: 0.5em;
+}
+
+table tbody tr td {
+    border-top: 0.15em solid rgb(244, 219, 222);
+    border-bottom: 0.15em solid rgb(244, 219, 222);
+    font-size: 18px;
+}
+
+.data {
+    font-weight: 600;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cheat Sheet</title>
+</head>
+<body>
+        <h1>Cheat Sheet</h1>
+
+    <!--table head-->
+    <section>
+        <article class="tags">
+            <h1>Tabellen Tags</h1>
+        </article>
+    </section>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Beschreibung</th>
+            </tr>
+        </thead>
+    
+    <!--table body-->
+    <tbody>
+        <tr>
+            <td class="data">&lt;table&gt;</td>
+            <td>Tabelle</td>
+            <td>Das Wrapper-Element für alle HTML-Tabellen</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;thead&gt;</td>
+            <td>Tabellenkopf</td>
+            <td>Die Reihe von Zeilen, die die Spaltenüberschriften in einer Tabelle definieren</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;tbody&gt;</td>
+            <td>Tabellenkörper</td>
+            <td>Der Satz von Zeilen, die tatsächliche Tabellendaten enthalten</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;tfoot&gt;</td>
+            <td>Tabellenfuss</td>
+            <td>Die Reihe von Zeilen, die die Fußzeile in einer Tabelle definieren</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;th&gt;</td>
+            <td>Tabellenkopfinhalt</td>
+            <td>Definiert eine Kopfzelle in einer Tabelle</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;tr&gt;</td>
+            <td>Inhalt der Tabellenzeile</td>
+            <td>Definiert die Zeilen in einer übergeordneten Zelle</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;td&gt;</td>
+            <td>Tabelle Dateninhalt</td>
+            <td>Definiert die Daten in einer Zeile</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;caption&gt;</td>
+            <td>Definiert eine Tabellenbeschriftung</td>
+            <td>Die Beschriftung für die Tabelle. Wie eine Figur an eine Figur</td>
+        </tr>
+        <tr>
+            <td class="data">&lt;colgroup&gt;</td>
+            <td>Definiert eine Gruppe von Spalten</td>
+            <td>Gibt eine Gruppe von einer oder mehreren Spalten in einer Tabelle zur Formatierung an</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--table head Attributes-->
+<section>
+    <article class="tags">
+        <h1>Tabellen Attribute</h1>
+    </article>
+</section>
+<table class="center">
+    <thead>
+        <tr>
+            <th>Attribute</th>
+            <th>erlaubt bei...</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+<!--table body Attributes-->
+<tbody>
+    <tr>
+        <td class="data">&lt;colspan&gt;</td>
+        <td>th, td</td>
+        <td>Erweitert eine Zelle auf eine Breite von 2 oder mehr Zellen</td>
+    </tr>
+    <tr>
+        <td class="data">&lt;rowspan&gt;</td>
+        <td>th, td</td>
+        <td>Erweitert eine Zelle auf 2 oder mehr Zellen</td>
+    </tr>
+    <tr>
+        <td class="data">&lt;span&gt;</td>
+        <td>col</td>
+        <td>Lässt die Spalte auf mehr als 2 oder mehr Spalten angewendet werden</td>
+    </tr>
+    <tr>
+        <td class="data">&lt;sortable&gt;</td>
+        <td>table</td>
+        <td>Gibt an, dass die Tabelle sortiert werden soll. UPDATE: Mir wurde gesagt, dass dies wegen fehlender Implementierungen aus der Spezifikation entfernt wurde</td>
+    </tr>
+    <tr>
+        <td class="data">&lt;headers&gt;</td>
+        <td>td</td>
+        <td>durch Leerzeichen getrennte Zeichenfolge, die den IDs der &lt;th&gt; für die Daten relevanten Elemente entspricht.  </td>
+    </tr>
+    <tr>
+        <td class="data">&lt;scope&gt;</td>
+        <td>th</td>
+        <td>row | col | rowgroup | colgroup
+            (Standard) - Gibt im Wesentlichen die Achse der Kopfzeile an.
+Die Standardeinstellung ist, dass ein Header eine Spalte leitet, was typisch ist. Eine Zeile kann jedoch auch mit einem Header beginnen, in dem Sie diesen Header auf die Zeile oder Zeilengruppe beschränken würden. </td>
+    </tr>
+</tbody>
+</table>
+
+<!--table head Attributes-->
+<section>
+    <article class="tags">
+        <h1>Veraltete Attribute</h1>
+    </article>
+</section>
+<table class="center">
+    <thead>
+        <tr>
+            <th>Veraltete Attribute</th>
+            <th>Was stattdessen zu verwenden</th>
+        </tr>
+    </thead>
+<!--table body Attributes-->
+<tbody>
+    <tr>
+        <td class="data">align</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"float"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">valign</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"vertical-align"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">char</td>
+        <td>Die richtige Antwort ist die Verwendung von <mark>text-align</mark>: "x"; Dabei ist x das Zeichen, an dem ausgerichtet werden soll, aber es ist noch nirgendwo implementiert. Dieses Attribut wird jedoch auch nicht unterstützt, sodass kein großer Verlust entsteht</td>
+    </tr>
+    <tr>
+        <td class="data">charoff</td>
+        <td>Siehe oben</td>
+    </tr>
+    <tr>
+        <td class="data">bgcolor</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"background-color"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">abbr</td>
+        <td>Erwägen Sie, den Zelleninhalt mit einem unabhängigen abgekürzten Inhalt selbst zu beginnen, oder verwenden Sie den abgekürzten Inhalt als Zelleninhalt und verwenden Sie den langen Inhalt als Beschreibung der Zelle, indem Sie ihn in das title-Attribut einfügen</td>
+    </tr>
+    <tr>
+        <td class="data">axis</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"scope"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">border</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"border"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">cellpadding</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"padding"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">cellspacing</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"border-spacing"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">frame</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"border"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">rules</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"border"</mark></td>
+    </tr>
+    <tr>
+        <td class="data">summary</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>&lt;caption&gt;</mark></td>
+    </tr>
+    <tr>
+        <td class="data">width</td>
+        <td>Verwenden Sie stattdessen die Eigenschaft <mark>"width"</mark></td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
